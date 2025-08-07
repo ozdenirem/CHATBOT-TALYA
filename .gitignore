@@ -1,0 +1,14 @@
+# .gitignore
+
+# node modules
+node_modules/
+
+# environment secrets
+.env
+
+# log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
