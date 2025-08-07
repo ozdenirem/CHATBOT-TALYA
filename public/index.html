@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; }
+    #chat-container { width: 400px; margin: 50px auto; background: white; padding: 20px; border-radius: 10px; }
+    #chat-log { height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+    .chat-message { margin: 5px 0; }
+    .user { text-align: right; }
+    .bot { text-align: left; }
+    .timestamp { font-size: 0.8em; color: gray; margin-left: 10px; }
+    #typing-indicator { display: none; font-style: italic; }
+    .controls { margin-top: 10px; display: flex; justify-content: space-between; }
+    .history-title { font-weight: bold; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-log"></div>
+    <div id="typing-indicator">🤖 Bot yazıyor...</div>
+    <input type="text" id="user-input" placeholder="Mesajınızı yazın..." />
+    <button id="send-btn">Gönder</button>
+    <div class="controls">
+      <button id="clear-history">Geçmişi Temizle</button>
+      <button id="show-history">Geçmişi Göster</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
